@@ -9,9 +9,9 @@ int main(){
 	int num1, num2, soma, subtr, divis, mult;
 	char opr, rpt;
 
-	printf("\n----- Esta é uma calculadora minimamente decente para operações básicas -----\n\n");
+	printf("\n----- Esta é uma calculadora minimamente decente para operações básicas -----\n\n"); //title
 	start:
-	printf("Digite a expressão que deseja calcular:\n");
+	printf("Digite a expressão que deseja calcular:\n"); // insert expression
 	scanf("%d%c%d", &num1, &opr, &num2);
 
 	soma = num1 + num2;
@@ -21,8 +21,8 @@ int main(){
 
 
 	if (opr == '+'){
-		printf("Você digitou uma adição.\n");
-		printf("O resultado é %d+%d=%d", num1, num2, soma);
+		printf("Você digitou uma adição.\n"); //you tipped an adition
+		printf("O resultado é %d+%d=%d", num1, num2, soma); // the result is 
 	} else if (opr == '-') {
 		printf("Você digitou uma subtração.\n");
 		printf("O resultado é %d-%d=%d", num1, num2, subtr);
@@ -35,7 +35,7 @@ int main(){
 	}
 
 	printf("\n\n");
-	printf("Deseja realizar outra operação? (s/n)\n");
+	printf("Deseja realizar outra operação? (s/n)\n"); // would you like to calculate another expression?
 	scanf(" %c", &rpt);
 	fflush(stdin);
 
