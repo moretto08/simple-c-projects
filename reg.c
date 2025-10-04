@@ -5,26 +5,14 @@
 /*Code for customers registrations. Saves the customer's infos at 
 'clients.txt' in prog's dir*/
 
+int criar_arquivo(const char *nome);
+
 struct clientes {
 	char nome[50];
 	char cpf[12];
 	char cep[9];
 	char dnasc[10];
 };
-
-int criar_arquivo(const char *nome) {
-    FILE *f = fopen(nome, "r");
-    if (f != NULL) {
-        fclose(f);
-        return 0;
-    }
-	f = fopen(nome, "w");
-    if (f == NULL) return -1;
-
-    fclose(f);
-    return 1;
-}
-
 
 int main(int argc, char const *argv[]){
 	setlocale(LC_ALL,"Portuguese");
@@ -67,4 +55,17 @@ int main(int argc, char const *argv[]){
 		goto start;
 
 	return 0;
+}
+
+int criar_arquivo(const char *nome) {
+    FILE *f = fopen(nome, "r");
+    if (f != NULL) {
+        fclose(f);
+        return 0;
+    }
+	f = fopen(nome, "w");
+    if (f == NULL) return -1;
+
+    fclose(f);
+    return 1;
 }
