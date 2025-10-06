@@ -1,4 +1,4 @@
-🇺🇸 This repo is destinated to archive the very firsts projects written in C by me. 
+🇺🇸 This repo is destinated to archive the very firsts projects written in C/C++ by me. 
 
 Hopefully this could be usefull for someone also.
 
@@ -7,7 +7,7 @@ The most of printf's infos are in brazilian portuguese, I'll make efforts to rem
 Some codes will only work on linux systems (especially the ones with system calls).
 
 
-🇧🇷 Este repositório tem por finalidade armazenar meus primeiros projetos escritos em C.
+🇧🇷 Este repositório tem por finalidade armazenar meus primeiros projetos escritos em C/C++.
 
 Com sorte poderá ser últil a outros iniciantes futuramente.
 
