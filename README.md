@@ -1,6 +1,6 @@
 🇺🇸 This repo is destinated to archive the very firsts projects written in C/C++ by me. 
 
-Hopefully this could be usefull for someone also.
+Hopefully this could be usefull for someone else.
 
 The most of printf's infos are in brazilian portuguese, I'll make efforts to remember to comment those lines with translation.
 
