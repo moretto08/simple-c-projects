@@ -3,6 +3,7 @@
 #include <string>
 #include <stdlib.h>
 #include <locale.h>
+#include <limits>
 
 using namespace std;
 
@@ -56,23 +57,24 @@ int main(int argc, char const *argv[])
 		switch(desiredOpt){
 			case 1:
 				cout<<"Função selecionada: 1- Inserção de um node no início da lista\n";
+				cin.ignore(numeric_limits<streamsize>::max(), '\n');
 				cout<<"Digite o nome:\n";
-				cin>>nome;
-				fflush(stdin);
+				getline(cin, nome);
+
 				cout<<"Digite o CPF:\n";
-				cin>>cpf;
-				fflush(stdin);
+				getline(cin, cpf);
 
 				addBegin(pointer, nome, cpf, &size);
 				break;
 			case 2:
 				cout<<"Função selecionada: 2- Inserção de um node no fim da lista\n";
+				cin.ignore(numeric_limits<streamsize>::max(), '\n');
 				cout<<"Digite o nome:\n";
-				cin>>nome;
-				fflush(stdin);
+				getline(cin, nome);
+
 				cout<<"Digite o CPF:\n";
-				cin>>cpf;
-				fflush(stdin);
+				getline(cin, cpf);
+
 				if(size==0){
 					addBegin(pointer,nome,cpf, &size);
 				}else{
@@ -84,13 +86,13 @@ int main(int argc, char const *argv[])
 				cout<<"Função selecionada: 3- Inserção de um node na posição N\n";
 				cout<<"Digite a posição desejada:\n";
 				cin>>pos;
-				fflush(stdin);
+				cin.ignore(numeric_limits<streamsize>::max(), '\n');
 				cout<<"Digite o nome:\n";
-				cin>>nome;
-				fflush(stdin);
+				getline(cin, nome);
+
 				cout<<"Digite o CPF:\n";
-				cin>>cpf;
-				fflush(stdin);
+				getline(cin, cpf);
+
 
 				if(pos==0){
 					addBegin(pointer,nome,cpf, &size);
